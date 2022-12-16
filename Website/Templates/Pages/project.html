@@ -1,0 +1,37 @@
+{% extends '../Layouts/layout.html' %}
+
+
+{% block content %}
+
+<div class="container mb-3">
+    <div class="row">
+        <div class="col">
+            Project Topik 7 :
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle text-center">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Merek</th>
+                <th scope="col">Jenis</th>
+                <th scope="col">Kapasitas</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for i in data %}    
+                    <tr>
+                        {% for a in i %}    
+                        <td>{{ a }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %} 
+            </tbody>
+        </table>
+    </div>
+</div>    
+    
+{% endblock content %}
