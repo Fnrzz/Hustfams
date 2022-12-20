@@ -77,9 +77,7 @@
 /* Akhir About We */
 
 /* Project */
-#project{
-    padding-bottom: 3rem;
-}
+
 .wrap-project{
     height: 90vh;
     align-items: center;
@@ -102,10 +100,6 @@
 .btn-project{
     padding: 8px;
     border-radius: 15px;
-}
-.wrap-table-project{
-    height: 100vh;
-    align-items: center;
 }
 /* Akhir Project */
 
@@ -161,10 +155,6 @@
     }
     .btn-project{
         font-size: 12px;
-    }
-    .wrap-table-project{
-        height: 50vh;
-        align-items: center;
     }
     /* Akhir Project */
 }

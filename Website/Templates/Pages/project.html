@@ -17,40 +17,52 @@
                     <h6 class="text-project">2. Users can compare prices and performance of various battery brands available on the market.</h6>
                     <div class="mt-4">
                         <a href="#tips" class="btn btn-sm btn-secondary btn-project fw-bold">Tricks & Tips</a>
-                        <a href="#table" class="btn btn-sm btn-secondary btn-project fw-bold">Battery Comparation</a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-sm btn-secondary btn-project fw-bold">Battery Comparation</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container" id="table">
-        <div class="row wrap-table-project">
-            <div class="row row-cols-1 g-3">
-                <div class="col">
-                    <h3 class="table-title">Table Battery</h3>
+
+    <!-- Modal Table -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title table-title fs-5" id="staticBackdropLabel">Table Battery</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col">
-                    <div class="table-responsive">
-                        <table class="table table-hover align-middle text-center">
-                            <thead>
-                              <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Merek</th>
-                                <th scope="col">Jenis</th>
-                                <th scope="col">Kapasitas</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                                {% for i in data %}    
-                                    <tr>
-                                        {% for a in i %}    
-                                        <td>{{ a }}</td>
-                                        {% endfor %}
-                                    </tr>
-                                {% endfor %} 
-                            </tbody>
-                        </table>
-                    </div>   
+                <div class="modal-body">
+                    <div class="row wrap-table-project">
+                        <div class="row">
+                            <div class="col">
+                                <div class="table-responsive">
+                                    <table class="table table-hover align-middle text-center">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Merek</th>
+                                            <th scope="col">Jenis</th>
+                                            <th scope="col">Kapasitas</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for i in data %}    
+                                                <tr>
+                                                    {% for a in i %}    
+                                                    <td>{{ a }}</td>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% endfor %} 
+                                        </tbody>
+                                    </table>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
