@@ -23,27 +23,33 @@
             </div>
         </div>
     </div>
+    <div class="container" id="table">
+        <div class="row wrap-table-project">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Merek</th>
+                            <th scope="col">Jenis</th>
+                            <th scope="col">Kapasitas</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in data %}    
+                                <tr>
+                                    {% for a in i %}    
+                                    <td>{{ a }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %} 
+                        </tbody>
+                    </table>
+                </div>   
+            </div>
+        </div>
+    </div>
 </section>
-    <!-- <div class="table-responsive">
-        <table class="table table-hover align-middle text-center">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Merek</th>
-                <th scope="col">Jenis</th>
-                <th scope="col">Kapasitas</th>
-              </tr>
-            </thead>
-            <tbody>
-                {% for i in data %}    
-                    <tr>
-                        {% for a in i %}    
-                        <td>{{ a }}</td>
-                        {% endfor %}
-                    </tr>
-                {% endfor %} 
-            </tbody>
-        </table>
-    </div> -->   
     
 {% endblock content %}

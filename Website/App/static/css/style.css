@@ -58,7 +58,9 @@
     background-color: #00A6D8;
 }
 .about-image{
-    width: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 .wrap-about-image-left{
     display: flex;
@@ -92,6 +94,10 @@
 .btn-project{
     padding: 8px;
     border-radius: 15px;
+}
+.wrap-table-project{
+    height: 80vh;
+    align-items: center;
 }
 /* Akhir Project */
 
@@ -128,6 +134,10 @@
     }
     .wrap-about-text h6{
         font-size: 12px;
+    }
+    .about-image{
+        width: 100px;
+        height: 100px;
     }
     /* Akhir About */
 
