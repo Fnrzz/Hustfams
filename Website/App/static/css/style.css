@@ -77,6 +77,9 @@
 /* Akhir About We */
 
 /* Project */
+#project{
+    padding-bottom: 3rem;
+}
 .wrap-project{
     height: 90vh;
     align-items: center;
@@ -84,6 +87,11 @@
 .project-title{
     font-family: 'Fredoka One', cursive;
     text-align: center;
+}
+.table-title{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    color: #417AFC;
 }
 .wrap-text-project{
     border-radius: 40px;
@@ -96,7 +104,7 @@
     border-radius: 15px;
 }
 .wrap-table-project{
-    height: 80vh;
+    height: 100vh;
     align-items: center;
 }
 /* Akhir Project */
@@ -153,6 +161,10 @@
     }
     .btn-project{
         font-size: 12px;
+    }
+    .wrap-table-project{
+        height: 50vh;
+        align-items: center;
     }
     /* Akhir Project */
 }
