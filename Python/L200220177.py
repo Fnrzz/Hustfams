@@ -2,9 +2,9 @@ print("jajargenjang")
 
 class jajargenjang:
     
-    #default value for a is 5 & t is 10
-    a = 5
-    t = 10
+    #user input value
+    a = int(input("masukkan jumlah value alas: "))
+    t = int(input("masukkan jumlah value tinggi: "))
     
     def hitung(self):
         calculate = self.a * self.t
