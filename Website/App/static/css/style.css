@@ -1,7 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-body {
-    overflow: hidden
+
+
+/* Navbar */
+.navbar-brand{
+    color: #417AFC;
+    font-family: 'Fredoka One', cursive;
+}
+.nav-link{
+    color: #417AFC;
+}
+/* Akhir Navbar */
+
+/* Home */
+.wrap-home{
+    height: 90vh;
+    align-items: center;
+}
+
+.home-text{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    color: white;
+    font-size: 40px;
 }
 
 .bubble::after {
@@ -15,29 +36,68 @@ body {
     background-color: #00A6D8;
     height: 80%;
 }
+/* Akhir Home */
 
-.navbar-brand{
-    color: #417AFC;
-    font-family: 'Fredoka One', cursive;
+/* About We */
+#about{
+    padding-bottom: 3rem;
 }
-.nav-link{
-    color: #417AFC;
-}
-
-
-.wrap-home{
-    height: 100vh;
-    align-items: center;
-}
-
-.home-text{
+.about-title{
     font-family: 'Fredoka One', cursive;
     text-align: center;
+    color: #417AFC;
+}
+.wrap-about{
+    height: 80vh;
+    align-items: center;
+}
+.about-text-wrapper{
+    border-radius: 40px;
+    padding: 15px;
     color: white;
-    font-size: 40px;
+    background-color: #00A6D8;
+}
+.about-image{
+    width: 50%;
+}
+.wrap-about-image-left{
+    display: flex;
+    justify-content: end;
+}
+.wrap-about-image-right{
+    display: flex;
+    justify-content: start;
+}
+.wrap-about-text{
+    text-align: center;
 }
 
+/* Akhir About We */
+
+/* Project */
+.wrap-project{
+    height: 90vh;
+    align-items: center;
+}
+.project-title{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+.wrap-text-project{
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+    background-color: #00A6D8;
+}
+.btn-project{
+    padding: 8px;
+    border-radius: 15px;
+}
+/* Akhir Project */
+
 @media screen and (max-width:994px) {
+    
+    /* Home */
     .bubble::after {
         content: '';
         border-top-left-radius: 50% 100%;
@@ -55,4 +115,34 @@ body {
     .nav-link{
         text-align: center;
     }
+    /* Akhir Home */
+
+    /* About */
+    .wrap-about-image-left{
+        display: flex;
+        justify-content: center;
+    }
+    .wrap-about-image-right{
+        display: flex;
+        justify-content: center;
+    }
+    .wrap-about-text h6{
+        font-size: 12px;
+    }
+    /* Akhir About */
+
+    /* Project */
+    .text-project{
+        font-size: 12px;
+    }
+    .wrap-text-project{
+        border-radius: 0px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        bottom: 0;
+    }
+    .btn-project{
+        font-size: 12px;
+    }
+    /* Akhir Project */
 }

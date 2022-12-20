@@ -10,3 +10,6 @@ def project(request):
         'data' : ReadData.Read(),
     }
     return render(request,'Pages/project.html',context)
+
+def aboutwe(request):
+    return render(request,'Pages/aboutwe.html')
