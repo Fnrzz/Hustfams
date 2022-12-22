@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from App.data.readData import ReadData
+from App.data.readData import *
 
 # Create your views here.
 def index(request):
