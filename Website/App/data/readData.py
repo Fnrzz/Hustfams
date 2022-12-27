@@ -11,3 +11,6 @@ class ReadData():
             for row in csvrender:
                 rows.append(row)
         return rows
+
+#Estimasi waktu penggunanan
+#EStimasi charge
