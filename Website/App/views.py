@@ -7,7 +7,7 @@ def index(request):
 
 def project(request):
     context = {
-        'data' : Baterai.showData(),
+        'data' : getData(),
     }
     return render(request,'Pages/project.html',context)
 
