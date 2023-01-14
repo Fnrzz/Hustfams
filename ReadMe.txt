@@ -6,3 +6,8 @@ Anggota Kelompok HustFams:
 5. lyasWB1 : Ilyas Wahyu Bharata (L200220131)
 6. rehalnays : Rehal Naya Putra (L200220160)
 7. Bagoesahmadfathoni : Bagoes Ahmad Fathoni (L200220184)
+
+URL github : https://github.com/Fnrzz/Hustfams
+
+Penjelasan Aplikasi :
+Kami mendapatkan topik 5 yaitu baterai dengan menggunakan modul csv. Aplikasi ini menggunakan framework django untuk membuat sebuah aplikasi berbasis Website. Kemudian website ini akan mengolah dan menampilkan data-data CSV.
