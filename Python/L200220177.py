@@ -10,7 +10,7 @@ class jajargenjang:
         calculate = self.a * self.t
         return calculate
     
-
+#make object
 p = jajargenjang()
 print("alas: ", p.a)
 print("luas: ", p.hitung())
