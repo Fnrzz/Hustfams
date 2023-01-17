@@ -6,7 +6,7 @@ Anggota Kelompok HustFams:
 5. lyasWB1 : Ilyas Wahyu Bharata (L200220131)
 6. rehalnays : Rehal Naya Putra (L200220160)
 7. Bagoesahmadfathoni : Bagoes Ahmad Fathoni (L200220184)
-
+8. fikriauliarakhman : Fikri Aulia Rakhman (L200220157)
 URL github : https://github.com/Fnrzz/Hustfams
 
 Penjelasan Aplikasi :
