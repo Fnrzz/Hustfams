@@ -1,4 +1,4 @@
-
+import sys
 class bankAccount:
     def __init__(self, saldo, tipe_akun):
         self.saldo = saldo
@@ -15,6 +15,7 @@ class bankAccount:
         pilih + amount
         if pilih > self.saldo:
             print('saldo kurang')
+            sys.exit()
         else:
             self.saldo -= pilih
             return self.saldo
@@ -26,6 +27,7 @@ class bankAccount:
 my = bankAccount(0, 'reguler')
 
 while True:
+    print(f'Tipe Akun: {my.tipe_akun}')
     choice = input("masukkan pilihan: ")
     if choice == '1':
         print(f'saldo anda adalah ${my.cekSaldo()}')
